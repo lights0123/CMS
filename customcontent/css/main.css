@@ -1,0 +1,431 @@
+@font-face {
+	font-family: 'Oxygen Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Oxygen Mono'), local('OxygenMono-Regular'), url(https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+/* Thanks to http://cssmenumaker.com for the code */
+
+#menu ul,
+#menu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul {
+	position: relative;
+	z-index: 597;
+}
+
+#menu ul li {
+	float: left;
+	min-height: 1px;
+	vertical-align: middle;
+}
+
+#menu ul li.hover,
+#menu ul li:hover {
+	position: relative;
+	z-index: 599;
+	cursor: default;
+}
+
+#menu ul ul {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 598;
+	width: 100%;
+}
+
+#menu ul ul li {
+	float: none;
+}
+
+#menu ul ul ul {
+	top: 0;
+	left: 190px;
+	width: 190px;
+}
+
+#menu ul li:hover > ul {
+	visibility: visible;
+}
+
+#menu ul ul {
+	bottom: 0;
+	left: 0;
+}
+
+#menu ul ul {
+	margin-top: 0;
+}
+
+#menu ul ul li {
+	font-weight: normal;
+}
+
+#menu a {
+	display: block;
+	line-height: 1em;
+	text-decoration: none;
+}
+
+#menu {
+	background: #333333;
+	border-bottom: 4px solid #1b9bff;
+	font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+
+#menu > ul {
+	*display: inline-block;
+}
+
+#menu:after,
+#menu ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#menu ul {
+	text-transform: uppercase;
+}
+
+#menu ul ul {
+	border-top: 4px solid #1b9bff;
+	text-transform: none;
+	min-width: 190px;
+}
+
+#menu ul ul a {
+	background: #1b9bff;
+	color: #ffffff;
+	border: 1px solid #0082e7;
+	border-top: 0 none;
+	line-height: 150%;
+	padding: 16px 20px;
+	font-size: 12px;
+}
+
+#menu ul ul ul {
+	border-top: 0 none;
+}
+
+#menu ul ul li {
+	position: relative;
+}
+
+#menu ul ul li:first-child > a {
+	border-top: 1px solid #0082e7;
+}
+
+#menu ul ul li:hover > a {
+	background: #4eb1ff;
+	color: #ffffff;
+}
+
+#menu ul ul li:last-child > a {
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-moz-box-shadow: 0 1px 0 #1b9bff;
+	-webkit-box-shadow: 0 1px 0 #1b9bff;
+	box-shadow: 0 1px 0 #1b9bff;
+}
+
+#menu ul ul li:last-child:hover > a {
+	-moz-border-radius: 0 0 0 3px;
+	-webkit-border-radius: 0 0 0 3px;
+	border-radius: 0 0 0 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+#menu ul ul li.has-sub > a:after {
+	content: '+';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -8px;
+}
+
+#menu ul li:hover > a,
+#menu ul li.active > a {
+	background: #1b9bff;
+	color: #ffffff;
+}
+
+#menu ul li.has-sub > a:after {
+	content: '+';
+	margin-left: 5px;
+}
+
+#menu a {
+	background: #333333;
+	color: #cbcbcb;
+	padding: 0 20px;
+}
+
+#menu > ul > li > a {
+	line-height: 48px;
+	font-size: 12px;
+}
+
+#menu.align-center > ul {
+	text-align: center;
+	font-size: 0;
+}
+
+#menu.align-center > ul > li {
+	display: inline-block;
+	float: none;
+}
+
+#menu.align-center ul ul {
+	text-align: left;
+}
+
+#menu.align-right > ul > li {
+	float: right;
+}
+
+#menu.align-right ul ul {
+	left: auto;
+	right: 0;
+	text-align: right;
+}
+
+#menu.align-right ul ul ul {
+	left: auto;
+	right: 190px;
+}
+
+#menu.align-right ul ul li.has-sub > a:after {
+	left: 15px;
+	right: auto;
+}
+
+#menu .right {
+	float: right;
+}
+
+.errorbox {
+	background: #fad7d4;
+	border-color: #f08a81 !important;
+}
+
+.warningbox {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+.successbox {
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	color: #3C763D;
+}
+
+.infobox {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+.notice {
+	border-left: 5px solid;
+	padding: 10px 10px 10px 30px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	clear: both;
+	font-size: 12px;
+}
+
+body {
+	background: transparent url("/img/back.png") repeat scroll 0 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+	position: relative;
+}
+
+#content {
+	padding-bottom: 60px; /* Height of the footer */
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Myriad Pro Regular';
+}
+
+#content > div {
+	bottom: 80px;
+	padding: 10px;
+	background-color: white;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Height of the footer */
+	text-align: center;
+}
+
+#footer p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #333;
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	color: #08C;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#signup_form fieldset {
+	border: none;
+	text-align: center;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#signup_form input {
+	width: 100%;
+	height: 50px;
+	border: none;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Myriad Pro Regular';
+}
+
+#signup_form div {
+	border: 1px solid #808080;
+	border-top: none;
+}
+
+#signup_form div:first-child {
+	border: 1px solid #808080;
+}
+
+#signup_form input[type="submit"] {
+	background-color: #09C;
+	color: white;
+}
+
+.error {
+	color: #F03737;
+}
+
+small {
+	font-size: 11px;
+	color: lightgrey;
+}
+
+small a {
+	font-size: 11px;
+	color: #82C1DC;
+}
+
+svg div {
+	font-family: Arial, 'Myriad Pro Regular', sans-serif;
+	font-size: 14px;
+	padding: 3px;
+	width: 134px;
+	height: 22px;
+	overflow: hidden;
+}
+
+svg .borderTeam {
+	width: 140px;
+	height: 0;
+	padding: 0;
+	position: absolute;
+	border-top: 1px solid rgb(153, 153, 153);
+	top: 21px;
+}
+
+svg .eventNumber {
+	width: 30px;
+	height: 44px;
+	padding-top: 12px;
+}
+
+svg .eventNumberBorder {
+	width: 0;
+	height: 44px;
+	padding: 0;
+	position: absolute;
+	border-right: 1px solid rgb(153, 153, 153);
+	top: 0;
+	left: 29px;
+}
+
+.tabs {
+	width: 100%;
+	display: inline-block;
+}
+
+.tab-links:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.tab-links li {
+	margin: 0px 5px;
+	float: left;
+	list-style: none;
+}
+
+.tab-links a {
+	padding: 9px 15px;
+	display: inline-block;
+	border-radius: 3px 3px 0px 0px;
+	background: #7FB5DA;
+	font-size: 16px;
+	font-weight: 600;
+	color: #4c4c4c;
+	transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+	background: #a7cce5;
+	text-decoration: none;
+}
+
+li.active a, li.active a:hover {
+	background: #fff;
+	color: #4c4c4c;
+}

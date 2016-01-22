@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	background: #FBFBFB;
+	font-family: "Segoe UI", "Open Sans", sans-serif;
+}
+
+#content {
+	width: 100%;
+}
+
+#content > div:first-of-type {
+	float: left;
+	height: 100%;
+	width: 152px;
+	background-color: #424f5a;
+	padding: 25px 0 0;
+}
+
+#selected-content {
+	height: 100%;
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+#selected-content > div {
+	width: auto;
+	padding-left: 162px;
+}
+
+#selected-content p {
+	margin: 0;
+}
+
+#content div[data-com-curlcsc-settingpanel-id]:not(#selected-content) {
+	display: none;
+}
+
+#content > div:first-of-type ul {
+	width: 152px;
+	padding: 0;
+}
+
+#content > div:first-of-type ul li {
+	height: 35px;
+	width: 137px;
+	list-style: none none;
+	color: #C1C1C1;
+	padding-left: 10px;
+	display: inline-block;
+	padding-top: 5px;
+	cursor: context-menu;
+	transition: background-color 150ms ease 0s;
+}
+
+#content > div:first-of-type ul li a {
+	color: #C1C1C1;
+	font-size: 16px;
+}
+
+#content > div:first-of-type ul li:hover {
+	background-color: #5e6972;
+}
+
+#content > div:first-of-type ul li * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#content > div:first-of-type ul li span {
+	padding-left: 9px;
+}
+
+#content > div:first-of-type ul li:nth-child(1) div {
+	width: 24px;
+	height: 24px;
+	background-image: url("/img/icons.svg#gear");
+	background-size: 24px 24px;
+}
+
+#content > div:first-of-type ul li:nth-child(2) div {
+	width: 24px;
+	height: 24px;
+	background-image: url("/img/icons.svg#content");
+	background-size: 24px 24px;
+}
+
+#selected {
+	height: 35px;
+	width: 135px;
+	list-style: none none;
+	color: #F2F2F2;
+	padding-left: 11px;
+	display: inline-block;
+	padding-top: 5px;
+	cursor: context-menu;
+	background-color: #343F48;
+	border-left: 4px solid #ff9500;
+	transition: none !important;
+}
