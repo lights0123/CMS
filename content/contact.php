@@ -1,4 +1,4 @@
-CSC Curling | Contact
+CMS | Contact
 <div>
 	<p>Contact</p>
 </div>

@@ -1,4 +1,4 @@
-Curling CSC | Privacy Policy
+CMS | Privacy Policy
 <div>
 	Privacy Policy
 </div>

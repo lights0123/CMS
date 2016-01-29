@@ -1,4 +1,4 @@
-CSC Curling | Terms of Service
+CMS | Terms of Service
 <div>
 	Terms of Service
 </div>

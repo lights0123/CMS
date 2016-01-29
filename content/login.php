@@ -1,4 +1,4 @@
-CSC Curling | Log In
+CMS | Log In
 <?php
 require_once '../scripts/main.php';
 if(isset($_SESSION['auth'])||isset($_SESSION['uid'])||isset($_SESSION['un'])||isset($_SESSION['email'])){

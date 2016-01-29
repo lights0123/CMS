@@ -1,4 +1,4 @@
-CSC Curling | About
+CMS | About
 <div>
 	<p>About</p>
 </div>

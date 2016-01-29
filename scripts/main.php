@@ -45,7 +45,6 @@ function menu($activeItem)
 {
 	$menu = array(
 		'/' => array('Home', null),
-		'/data' => array('View Data', null),
 		'/contact' => array('Contact', null),
 		'/about' => array('About', null)
 	);

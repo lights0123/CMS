@@ -1,4 +1,4 @@
-CSC Curling | Settings
+CMS | Settings
 <?php
 $items = [];
 $items["General"] = ["<p>content</p>"];
@@ -33,7 +33,7 @@ if (isset($_GET['panel']) && in_array($_GET['panel'],array_keys($items))){
 foreach ($items as $key => $value) {
 $selected = (isset($value[1]) && $value[1] === true) ? ' id="selected-content"' : "";
 ?>
-	<div<?=$selected?> data-com-curlcsc-settingpanel-id="<?php echo htmlspecialchars($key);?>">
+	<div<?=$selected?> data-settingpanel-id="<?php echo htmlspecialchars($key);?>">
 		<div>
 			<?=$value[0]?>
 		</div>

@@ -10,6 +10,7 @@ Your web host has to have several things for this CMS to work. You will have to 
 Personally, I use a VPS from vps.net running CentOS 7 and I'm compiling PHP with
 `--with-apxs2=/usr/bin/apxs --with-mysql --with-mysqli --enable-libxml --enable-xmlwriter --enable-sockets --with-openssl --enable-mbstring`, using the default version of Apache from Yum.
 Also, you will need a database running MySQL, MariaDB, etc. Apache should be able to read & parse `.htaccess` files.
+An apache installation is assumed, you will need to port `.htaccess` to your server.
 
 If you don't have the required modules, they will display on the home page.
 ##Adding Content
@@ -111,3 +112,6 @@ EOF;
 
 }
 `
+#Additional Notes
+##Legal Stuff
+I'm not a lawyer, and I don't speak legal-speak. I really don't care what you do with it as long as I'm not responsible for anything. Feel free to remove my name from anything.

@@ -1,4 +1,4 @@
-CSC Curling | Sign Up
+CMS | Sign Up
 <?php
 require_once '../scripts/main.php';
 global $error;
@@ -157,7 +157,7 @@ if ($error['password'] || $error['username'] || $error['email']) {
 		<fieldset class="center">
 			<input type="submit" value="Sign Up"/>
 			<br/>
-			<small>By signing up, you agree to the CSC Curling's <a href="/tos">Terms of Service</a> and <a
+			<small>By signing up, you agree to the CMS's <a href="/tos">Terms of Service</a> and <a
 					href="/privacy">Privacy Policy</a>.
 			</small>
 		</fieldset>

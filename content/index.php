@@ -1,4 +1,4 @@
-CSC Curling
+CMS
 <div>
 	<?php
 	if(!class_exists('mysqli')){
